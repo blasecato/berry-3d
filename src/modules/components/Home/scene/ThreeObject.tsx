@@ -2,7 +2,6 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { useFrame, useLoader } from '@react-three/fiber';
-// import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 import * as THREE from 'three';  // Importamos THREE para el color

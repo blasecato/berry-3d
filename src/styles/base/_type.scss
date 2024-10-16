@@ -1,0 +1,12 @@
+.h1 {
+  @include h1;
+}
+
+.button-txt {
+  @include button-txt;
+}
+
+.sub-title {
+  @include sub-title;
+}
+

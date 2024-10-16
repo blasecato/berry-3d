@@ -1,0 +1,122 @@
+.banner-content {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: url("../../../../public/bgcircuit.png"),
+    linear-gradient(90deg, #1c0e42 0%, #340aab 94%);
+
+  .section {
+    flex: 0 0 100vw;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    .column {
+      width: 50%;
+      height: 100%;
+      &-text,
+      &-img {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 18px;
+      }
+      &-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &-3,
+    &-4,
+    &-1 {
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        .sub-title {
+          max-width: 320px;
+          margin: 0 auto;
+        }
+      }
+      .column {
+        width: 50%;
+        &-img {
+          .img-banner {
+            margin-top: 60px;
+          }
+        }
+      }
+      .card {
+        border-radius: 22.54px;
+        border: 5px solid #d5d5d5;
+        background: var(--Backberry, #f6f6f6);
+        box-shadow: 63px 47px 90.8px 0px #13004a;
+        width: 409.851px;
+        height: 539.221px;
+      }
+    }
+    &-4 {
+      .column {
+        &-text {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+    &-2 {
+      display: flex;
+      align-items: self-start;
+      justify-content: center;
+      padding-top: 100px;
+      .sub-title {
+        font-size: 23px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .steps {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    padding: 20px;
+    z-index: 2000;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+    &-items {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      .step {
+        border: 1px solid #fff;
+        height: 4px;
+        width: 22px;
+        border-radius: 50px;
+        background: transparent;
+        &-1 {
+          width: 122px;
+        }
+      }
+      .active {
+        background-color: #fff;
+      }
+    }
+  }
+}
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden; /* Habilita el scroll horizontal */
+  white-space: nowrap; /* Evita que los elementos se dividan en varias líneas */
+}
+

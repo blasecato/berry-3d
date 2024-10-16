@@ -1,0 +1,15 @@
+.button {
+  &-default {
+    @include button-txt;
+    background: var(--colors-frozenberry);
+    border-radius: 5px;
+    padding: 16.5px 28px;
+    border: none;
+  }
+  &-link {
+    @include button-txt;
+    background: transparent;
+    border: none;
+  }
+}
+

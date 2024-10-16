@@ -65,16 +65,16 @@ const HorizontalScroll = () => {
           zIndex: '2000'
         }}
       >
-        <section ref={(el) => (sectionsRef.current[0] = el)}>
+        <section ref={(el) => { sectionsRef.current[0] = el; }}>
           <Section1 />
         </section>
-        <section ref={(el) => (sectionsRef.current[1] = el)}>
+        <section ref={(el) => { sectionsRef.current[1] = el; }}>
           <Section2 />
         </section>
-        <section ref={(el) => (sectionsRef.current[2] = el)}>
+        <section ref={(el) => { sectionsRef.current[2] = el; }}>
           <Section3 />
         </section>
-        <section ref={(el) => (sectionsRef.current[3] = el)}>
+        <section ref={(el) => { sectionsRef.current[3] = el; }}>
           <Section4 />
         </section>
       </div>

@@ -21,7 +21,7 @@ const Header = () => {
               <Image
                 alt='instagram'
                 height={20}
-                src={'/insta.svg'}
+                src={'/insta.png'}
                 width={20}
               />
             </Link>
@@ -37,7 +37,7 @@ const Header = () => {
               <Image
                 alt='facebook'
                 height={20}
-                src={'/face.svg'}
+                src={'/face.png'}
                 width={20}
               />
             </Link>

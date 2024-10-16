@@ -21,7 +21,7 @@ const Header = () => {
               <Image
                 alt='l'
                 height={20}
-                src={'/insta.png'}
+                src={'/i.png'}
                 width={20}
               />
             </Link>

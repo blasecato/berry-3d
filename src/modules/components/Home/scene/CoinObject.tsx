@@ -197,7 +197,7 @@ export default function CoinObject({ currentSection, gltfPath, positionCircle, p
           x: 0,
           y: 0,
           z: 0,
-          duration: 1,
+          duration: 0,
           ease: 'power3.out',
         });
       }

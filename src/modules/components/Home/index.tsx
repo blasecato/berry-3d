@@ -22,6 +22,7 @@ const ThreeScene = dynamic(() => import('./scene/ThreeScene'), {
 const HorizontalScroll = () => {
   const containerRef = useRef(null);
   const sectionsRef: any = useRef([]);
+  const [isCheck, setCheck] = useState<boolean>(false)
   const [currentSection, setCurrentSection] = useState(1); // Estado de la sección actual
 
   useGSAP(() => {
@@ -56,7 +57,7 @@ const HorizontalScroll = () => {
       }}
       className="banner-content"
     >
-      <ThreeScene currentSection={currentSection} />
+      <ThreeScene currentSection={currentSection} isCheck={isCheck} setCheck={setCheck} />
       <div
         style={{
           position: 'relative',
@@ -72,7 +73,7 @@ const HorizontalScroll = () => {
           <Section2 />
         </section>
         <section ref={(el) => { sectionsRef.current[2] = el; }}>
-          <Section3 />
+          <Section3 currentSection={currentSection} />
         </section>
         <section ref={(el) => { sectionsRef.current[3] = el; }}>
           <Section4 />

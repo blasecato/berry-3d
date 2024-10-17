@@ -14,7 +14,7 @@ export default function ThreeObject({ currentSection }: Props) {
   const meshRef: any = useRef();
 
   // Cargar el modelo GLTF usando useLoader
-  const gltf = useLoader(GLTFLoader, '/Hoja-berry-3D.gltf');
+  const gltf = useLoader(GLTFLoader, '/textures/Hoja-berry-3D.gltf');
 
   // Configurar el color del objeto y habilitar sombras
   useEffect(() => {
@@ -34,7 +34,7 @@ export default function ThreeObject({ currentSection }: Props) {
   useFrame(() => {
     if (meshRef.current) {
       // Movimiento muy mínimo en el eje Y
-      meshRef.current.position.y += Math.sin(Date.now() * 0.001) * 0.001;
+      meshRef.current.position.y += Math.sin(Date.now() * 0.001) * 0.0001;
     }
   });
 

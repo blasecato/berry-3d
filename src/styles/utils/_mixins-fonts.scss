@@ -11,6 +11,33 @@
   white-space: break-spaces;
 }
 
+@mixin h2 {
+  color: var(--colors-pureberry);
+  font-family: $Lato;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+}
+
+@mixin body-bold {
+  color: var(--colors-pureberry);
+  font-family: $Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150.187%;
+}
+
+@mixin body-regular {
+  color: var(--colors-pureberry);
+  font-family: $Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
 @mixin button-txt {
   color: var(--colors-white);
   text-align: center;

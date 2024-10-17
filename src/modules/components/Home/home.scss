@@ -54,12 +54,67 @@
         }
       }
       .card {
+        position: relative;
         border-radius: 22.54px;
         border: 5px solid #d5d5d5;
         background: var(--Backberry, #f6f6f6);
         box-shadow: 63px 47px 90.8px 0px #13004a;
-        width: 409.851px;
-        height: 539.221px;
+        width: 439.851px;
+        height: 540.221px;
+        padding: 15px;
+        .body-regular {
+          margin: 10px 0;
+        }
+        .insurers {
+          height: 48px;
+          width: 131px;
+        }
+        .items {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 10px;
+          &-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            height: 92px;
+            width: 48%;
+            border-radius: 10px;
+            background: var(--Blanco, #fff);
+            box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.05);
+          }
+        }
+        .circle-ray {
+          height: 90px;
+          width: 90px;
+          border-radius: 50%;
+          position: absolute;
+          bottom: -55px;
+          left: 40%;
+          background-color: #1c0e42;
+          border: 3px solid #fff;
+          img {
+            filter: drop-shadow(5px 5px 10px $colors-frozenberry);
+            animation: pulse 2s infinite; /* Animación continua */
+            transform-origin: center;
+          }
+
+          @keyframes pulse {
+            0% {
+              transform: scale(1);
+            }
+            50% {
+              transform: scale(1.5); /* Escalado sutil */
+            }
+            100% {
+              transform: scale(1);
+            }
+          }
+        }
       }
     }
     &-4 {
@@ -86,7 +141,6 @@
     position: absolute;
     width: 100%;
     bottom: 20px;
-    padding: 20px;
     z-index: 2000;
     .container {
       display: flex;

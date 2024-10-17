@@ -1,7 +1,15 @@
 .h1 {
   @include h1;
 }
-
+.h2 {
+  @include h2;
+}
+.body-bold {
+  @include body-bold;
+}
+.body-regular {
+  @include body-regular;
+}
 .button-txt {
   @include button-txt;
 }

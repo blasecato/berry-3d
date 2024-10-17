@@ -19,9 +19,9 @@ const Header = () => {
           <div className="networks">
             <Link href='./'>
               <Image
-                alt='l'
+                alt='logo'
                 height={20}
-                src={'/i.png'}
+                src={'/insta.svg'}
                 width={20}
               />
             </Link>
@@ -35,7 +35,7 @@ const Header = () => {
             </Link>
             <Link href='./'>
               <Image
-                alt='l'
+                alt='facebook'
                 height={20}
                 src={'/face.png'}
                 width={20}
